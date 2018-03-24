@@ -1,9 +1,9 @@
-title: Streamdata Gallery
-url: google-genomics.api.streamdata.gallery
+title: Streamdata Gallery Google Genomics
+url: google-genomics.streamdata.gallery
 tag: Google Genomics
 markdown: kramdown
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", ".DS_Store"]
-github_user: streamdata-gallery-organizations
+github_user: streamdata-gallery
 github_repo: google-genomics
 github_branch: master
 collections:
