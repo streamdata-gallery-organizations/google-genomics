@@ -4,7 +4,7 @@ x-collection-name: Google Genomics
 x-complete: 1
 info:
   title: Genomics
-  description: upload-process-query-and-search-genomics-data-in-the-cloud
+  description: upload-process-query-and-search-genomics-data-in-the-cloud-
   contact:
     name: Google
     url: https://google.com
