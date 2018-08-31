@@ -1,0 +1,33 @@
+{
+	"name": "Streadata.io API Gallery - Google Genomics",
+	"description": "This is a repository of google genomics APIs, self-contained as a Github repository, with HTML and YAML representations of the APIs and their surrounding operations.",
+	"image": "http://template.streamdata.gallery/assets/google-genomics.png",
+	"created": "2018-02-24",
+	"modified": "2018-08-30",
+	"url": "http://google-genomics.streamdata.gallery/apis.json",
+	"specificationVersion": "0.14",
+	"apis": [
+		{
+			"name": "Google Genomics",
+			"x-api-slug": "google-genomics",
+			"description": "Google Genomics helps the life science community organize the world&rsquo;s genomic information and make it accessible and useful. Big genomic data is here today, with petabytes rapidly growing toward exabytes. Through our extensions to Google Cloud Platform, you can apply the same technologies that power Google Search and Maps to securely store, process, explore, and share large, complex datasets.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png",
+			"humanURL": "https://cloud.google.com/genomics/",
+			"baseURL": "://genomics.googleapis.com//",
+			"tags": "Google Genomics",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/openapi.md"
+				}
+			]
+		}
+	],
+	"tags": "Google Genomics",
+	"include": [
+		{
+			"name": "Google Genomics",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/apis.yaml"
+		}
+	]
+}

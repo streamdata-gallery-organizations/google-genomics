@@ -10,13 +10,13 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "9"
 x-alexaRank: "0"
 tags: Google Genomics
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-30"
+modified: "2018-08-30"
 url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Google Genomics API Create Annotation
-  x-api-slug: google-genomics-api
+- name: Genomics - Create Annotation
+  x-api-slug: v1annotations-post
   description: |-
     Creates a new annotation. Caller must have WRITE permission
     for the associated annotation set.
@@ -42,13 +42,14 @@ apis:
     for additional restrictions on each field.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/annotations
-  tags: Annotation
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1annotations-post-openapi.md
-- name: Google Genomics API Search Annotations
-  x-api-slug: google-genomics-api
+- name: Genomics - Search Annotations
+  x-api-slug: v1annotationssearch-post
   description: |-
     Searches for annotations that match the given criteria. Results are
     ordered by genomic coordinate (by reference sequence, then position).
@@ -59,49 +60,53 @@ apis:
     READ permission for the queried annotation sets.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/annotations/search
-  tags: Annotation
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1annotationssearch-post-openapi.md
-- name: Google Genomics API Delete Annotation
-  x-api-slug: google-genomics-api
+- name: Genomics - Delete Annotation
+  x-api-slug: v1annotationsannotationid-delete
   description: |-
     Deletes an annotation. Caller must have WRITE permission for
     the associated annotation set.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/annotations/{annotationId}
-  tags: Annotation
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1annotationsannotationid-delete-openapi.md
-- name: Google Genomics API Get Annotation
-  x-api-slug: google-genomics-api
+- name: Genomics - Get Annotation
+  x-api-slug: v1annotationsannotationid-get
   description: |-
     Gets an annotation. Caller must have READ permission
     for the associated annotation set.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/annotations/{annotationId}
-  tags: Annotation
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1annotationsannotationid-get-openapi.md
-- name: Google Genomics API Update Annotation
-  x-api-slug: google-genomics-api
+- name: Genomics - Update Annotation
+  x-api-slug: v1annotationsannotationid-put
   description: |-
     Updates an annotation. Caller must have
     WRITE permission for the associated dataset.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/annotations/{annotationId}
-  tags: Annotation
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1annotationsannotationid-put-openapi.md
-- name: Google Genomics API Create Batch Annotation
-  x-api-slug: google-genomics-api
+- name: Genomics - Create Batch Annotation
+  x-api-slug: v1annotationsbatchcreate-post
   description: |-
     Creates one or more new annotations atomically. All annotations must
     belong to the same annotation set. Caller must have WRITE
@@ -119,13 +124,14 @@ apis:
     CreateAnnotation.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/annotations:batchCreate
-  tags: Annotation
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1annotationsbatchcreate-post-openapi.md
-- name: Google Genomics API Create Annotation Set
-  x-api-slug: google-genomics-api
+- name: Genomics - Create Annotation Set
+  x-api-slug: v1annotationsets-post
   description: |-
     Creates a new annotation set. Caller must have WRITE permission for the
     associated dataset.
@@ -139,13 +145,14 @@ apis:
     server-generated (for example, the `id` field).
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/annotationsets
-  tags: Annotation Set
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1annotationsets-post-openapi.md
-- name: Google Genomics API Search Annotation Sets
-  x-api-slug: google-genomics-api
+- name: Genomics - Search Annotation Sets
+  x-api-slug: v1annotationsetssearch-post
   description: |-
     Searches for annotation sets that match the given criteria. Annotation sets
     are returned in an unspecified order. This order is consistent, such that
@@ -154,50 +161,54 @@ apis:
     responses. Caller must have READ permission for the queried datasets.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/annotationsets/search
-  tags: Annotation Set
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1annotationsetssearch-post-openapi.md
-- name: Google Genomics API Delete Annotation Set
-  x-api-slug: google-genomics-api
+- name: Genomics - Delete Annotation Set
+  x-api-slug: v1annotationsetsannotationsetid-delete
   description: |-
     Deletes an annotation set. Caller must have WRITE permission
     for the associated annotation set.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/annotationsets/{annotationSetId}
-  tags: Annotation Set
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1annotationsetsannotationsetid-delete-openapi.md
-- name: Google Genomics API Get Annotation Set
-  x-api-slug: google-genomics-api
+- name: Genomics - Get Annotation Set
+  x-api-slug: v1annotationsetsannotationsetid-get
   description: |-
     Gets an annotation set. Caller must have READ permission for
     the associated dataset.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/annotationsets/{annotationSetId}
-  tags: Annotation Set
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1annotationsetsannotationsetid-get-openapi.md
-- name: Google Genomics API Update Annotation Set
-  x-api-slug: google-genomics-api
+- name: Genomics - Update Annotation Set
+  x-api-slug: v1annotationsetsannotationsetid-put
   description: |-
     Updates an annotation set. The update must respect all mutability
     restrictions and other invariants described on the annotation set resource.
     Caller must have WRITE permission for the associated dataset.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/annotationsets/{annotationSetId}
-  tags: Annotation Set
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1annotationsetsannotationsetid-put-openapi.md
-- name: Google Genomics API Create Call Set
-  x-api-slug: google-genomics-api
+- name: Genomics - Create Call Set
+  x-api-slug: v1callsets-post
   description: |-
     Creates a new call set.
 
@@ -206,13 +217,14 @@ apis:
     Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/callsets
-  tags: Call Set
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1callsets-post-openapi.md
-- name: Google Genomics API Search Call Sets
-  x-api-slug: google-genomics-api
+- name: Genomics - Search Call Sets
+  x-api-slug: v1callsetssearch-post
   description: |-
     Gets a list of call sets matching the criteria.
 
@@ -224,13 +236,14 @@ apis:
     [GlobalAllianceApi.searchCallSets](https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/variantmethods.avdl#L178).
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/callsets/search
-  tags: Call Set
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1callsetssearch-post-openapi.md
-- name: Google Genomics API Delete Call Set
-  x-api-slug: google-genomics-api
+- name: Genomics - Delete Call Set
+  x-api-slug: v1callsetscallsetid-delete
   description: |-
     Deletes a call set.
 
@@ -239,13 +252,14 @@ apis:
     Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/callsets/{callSetId}
-  tags: Call Set
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1callsetscallsetid-delete-openapi.md
-- name: Google Genomics API Get Call Set
-  x-api-slug: google-genomics-api
+- name: Genomics - Get Call Set
+  x-api-slug: v1callsetscallsetid-get
   description: |-
     Gets a call set by ID.
 
@@ -254,13 +268,14 @@ apis:
     Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/callsets/{callSetId}
-  tags: Call Set
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1callsetscallsetid-get-openapi.md
-- name: Google Genomics API Update Call Set
-  x-api-slug: google-genomics-api
+- name: Genomics - Update Call Set
+  x-api-slug: v1callsetscallsetid-patch
   description: |-
     Updates a call set.
 
@@ -271,13 +286,14 @@ apis:
     This method supports patch semantics.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/callsets/{callSetId}
-  tags: Call Set
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1callsetscallsetid-patch-openapi.md
-- name: Google Genomics API Get Datasets
-  x-api-slug: google-genomics-api
+- name: Genomics - Get Datasets
+  x-api-slug: v1datasets-get
   description: |-
     Lists datasets within a project.
 
@@ -286,15 +302,16 @@ apis:
     Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/datasets
-  tags: Dataset
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1datasets-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1datasets-get-openapi.md
-- name: Google Genomics API Create Dataset
-  x-api-slug: google-genomics-api
+- name: Genomics - Create Dataset
+  x-api-slug: v1datasets-post
   description: |-
     Creates a new dataset.
 
@@ -303,13 +320,14 @@ apis:
     Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/datasets
-  tags: Dataset
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1datasets-post-openapi.md
-- name: Google Genomics API Delete Dataset
-  x-api-slug: google-genomics-api
+- name: Genomics - Delete Dataset
+  x-api-slug: v1datasetsdatasetid-delete
   description: |-
     Deletes a dataset and all of its contents (all read group sets,
     reference sets, variant sets, call sets, annotation sets, etc.)
@@ -323,15 +341,16 @@ apis:
     Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/datasets/{datasetId}
-  tags: Dataset
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1datasetsdatasetid-delete-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1datasetsdatasetid-delete-openapi.md
-- name: Google Genomics API Get Dataset
-  x-api-slug: google-genomics-api
+- name: Genomics - Get Dataset
+  x-api-slug: v1datasetsdatasetid-get
   description: |-
     Gets a dataset by ID.
 
@@ -340,15 +359,16 @@ apis:
     Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/datasets/{datasetId}
-  tags: Dataset
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1datasetsdatasetid-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1datasetsdatasetid-get-openapi.md
-- name: Google Genomics API Update Dataset
-  x-api-slug: google-genomics-api
+- name: Genomics - Update Dataset
+  x-api-slug: v1datasetsdatasetid-patch
   description: |-
     Updates a dataset.
 
@@ -359,13 +379,14 @@ apis:
     This method supports patch semantics.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/datasets/{datasetId}
-  tags: Dataset
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1datasetsdatasetid-patch-openapi.md
-- name: Google Genomics API Restore Dataset
-  x-api-slug: google-genomics-api
+- name: Genomics - Restore Dataset
+  x-api-slug: v1datasetsdatasetidundelete-post
   description: |-
     Undeletes a dataset by restoring a dataset which was deleted via this API.
 
@@ -376,13 +397,14 @@ apis:
     This operation is only possible for a week after the deletion occurred.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/datasets/{datasetId}:undelete
-  tags: Dataset
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1datasetsdatasetidundelete-post-openapi.md
-- name: Google Genomics API Search Read Group Sets
-  x-api-slug: google-genomics-api
+- name: Genomics - Search Read Group Sets
+  x-api-slug: v1readgroupsetssearch-post
   description: |-
     Searches for read group sets matching the criteria.
 
@@ -394,13 +416,14 @@ apis:
     [GlobalAllianceApi.searchReadGroupSets](https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/readmethods.avdl#L135).
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/readgroupsets/search
-  tags: Read Group Set
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1readgroupsetssearch-post-openapi.md
-- name: Google Genomics API Delete Read Group Set
-  x-api-slug: google-genomics-api
+- name: Genomics - Delete Read Group Set
+  x-api-slug: v1readgroupsetsreadgroupsetid-delete
   description: |-
     Deletes a read group set.
 
@@ -409,13 +432,14 @@ apis:
     Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/readgroupsets/{readGroupSetId}
-  tags: Read Group Set
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1readgroupsetsreadgroupsetid-delete-openapi.md
-- name: Google Genomics API Get Read Group Set
-  x-api-slug: google-genomics-api
+- name: Genomics - Get Read Group Set
+  x-api-slug: v1readgroupsetsreadgroupsetid-get
   description: |-
     Gets a read group set by ID.
 
@@ -424,13 +448,14 @@ apis:
     Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/readgroupsets/{readGroupSetId}
-  tags: Read Group Set
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1readgroupsetsreadgroupsetid-get-openapi.md
-- name: Google Genomics API Update Read Group Set
-  x-api-slug: google-genomics-api
+- name: Genomics - Update Read Group Set
+  x-api-slug: v1readgroupsetsreadgroupsetid-patch
   description: |-
     Updates a read group set.
 
@@ -441,13 +466,14 @@ apis:
     This method supports patch semantics.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/readgroupsets/{readGroupSetId}
-  tags: Read Group Set
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1readgroupsetsreadgroupsetid-patch-openapi.md
-- name: Google Genomics API Get Coverage Buckets for Read Group Set
-  x-api-slug: google-genomics-api
+- name: Genomics - Get Coverage Buckets for Read Group Set
+  x-api-slug: v1readgroupsetsreadgroupsetidcoveragebuckets-get
   description: |-
     Lists fixed width coverage buckets for a read group set, each of which
     correspond to a range of a reference sequence. Each bucket summarizes
@@ -464,13 +490,14 @@ apis:
     set.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/readgroupsets/{readGroupSetId}/coveragebuckets
-  tags: Read Group Set
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1readgroupsetsreadgroupsetidcoveragebuckets-get-openapi.md
-- name: Google Genomics API Export Read Group Set
-  x-api-slug: google-genomics-api
+- name: Genomics - Export Read Group Set
+  x-api-slug: v1readgroupsetsreadgroupsetidexport-post
   description: |-
     Exports a read group set to a BAM file in Google Cloud Storage.
 
@@ -484,13 +511,14 @@ apis:
     for caveats.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/readgroupsets/{readGroupSetId}:export
-  tags: Read Group Set
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1readgroupsetsreadgroupsetidexport-post-openapi.md
-- name: Google Genomics API Create Read Group Set
-  x-api-slug: google-genomics-api
+- name: Genomics - Create Read Group Set
+  x-api-slug: v1readgroupsetsimport-post
   description: |-
     Creates read group sets by asynchronously importing the provided
     information.
@@ -512,13 +540,14 @@ apis:
     and position)
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/readgroupsets:import
-  tags: Read Group Set
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1readgroupsetsimport-post-openapi.md
-- name: Google Genomics API Search Reads
-  x-api-slug: google-genomics-api
+- name: Genomics - Search Reads
+  x-api-slug: v1readssearch-post
   description: |-
     Gets a list of reads for one or more read group sets.
 
@@ -546,13 +575,14 @@ apis:
     [GlobalAllianceApi.searchReads](https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/readmethods.avdl#L85).
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/reads/search
-  tags: Reads
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1readssearch-post-openapi.md
-- name: Google Genomics API Search References
-  x-api-slug: google-genomics-api
+- name: Genomics - Search References
+  x-api-slug: v1referencessearch-post
   description: |-
     Searches for references which match the given criteria.
 
@@ -564,13 +594,14 @@ apis:
     [GlobalAllianceApi.searchReferences](https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/referencemethods.avdl#L146).
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/references/search
-  tags: Reference
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1referencessearch-post-openapi.md
-- name: Google Genomics API Get Reference
-  x-api-slug: google-genomics-api
+- name: Genomics - Get Reference
+  x-api-slug: v1referencesreferenceid-get
   description: |-
     Gets a reference.
 
@@ -582,13 +613,14 @@ apis:
     [GlobalAllianceApi.getReference](https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/referencemethods.avdl#L158).
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/references/{referenceId}
-  tags: Reference
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1referencesreferenceid-get-openapi.md
-- name: Google Genomics API Get Reference Base
-  x-api-slug: google-genomics-api
+- name: Genomics - Get Reference Base
+  x-api-slug: v1referencesreferenceidbases-get
   description: |-
     Lists the bases in a reference, optionally restricted to a range.
 
@@ -600,13 +632,14 @@ apis:
     [GlobalAllianceApi.getReferenceBases](https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/referencemethods.avdl#L221).
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/references/{referenceId}/bases
-  tags: Reference
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1referencesreferenceidbases-get-openapi.md
-- name: Google Genomics API Search Reference Set
-  x-api-slug: google-genomics-api
+- name: Genomics - Search Reference Set
+  x-api-slug: v1referencesetssearch-post
   description: |-
     Searches for reference sets which match the given criteria.
 
@@ -618,13 +651,14 @@ apis:
     [GlobalAllianceApi.searchReferenceSets](https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/referencemethods.avdl#L71)
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/referencesets/search
-  tags: Reference Set
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1referencesetssearch-post-openapi.md
-- name: Google Genomics API Get Reference Set
-  x-api-slug: google-genomics-api
+- name: Genomics - Get Reference Set
+  x-api-slug: v1referencesetsreferencesetid-get
   description: |-
     Gets a reference set.
 
@@ -636,13 +670,14 @@ apis:
     [GlobalAllianceApi.getReferenceSet](https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/referencemethods.avdl#L83).
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/referencesets/{referenceSetId}
-  tags: Reference Set
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1referencesetsreferencesetid-get-openapi.md
-- name: Google Genomics API Create Variant
-  x-api-slug: google-genomics-api
+- name: Genomics - Create Variant
+  x-api-slug: v1variants-post
   description: |-
     Creates a new variant.
 
@@ -651,13 +686,14 @@ apis:
     Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/variants
-  tags: Variant
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1variants-post-openapi.md
-- name: Google Genomics API Get Variants
-  x-api-slug: google-genomics-api
+- name: Genomics - Get Variants
+  x-api-slug: v1variantssearch-post
   description: |-
     Gets a list of variants matching the criteria.
 
@@ -669,13 +705,14 @@ apis:
     [GlobalAllianceApi.searchVariants](https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/variantmethods.avdl#L126).
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/variants/search
-  tags: Variant
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1variantssearch-post-openapi.md
-- name: Google Genomics API Delete Variant
-  x-api-slug: google-genomics-api
+- name: Genomics - Delete Variant
+  x-api-slug: v1variantsvariantid-delete
   description: |-
     Deletes a variant.
 
@@ -684,13 +721,14 @@ apis:
     Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/variants/{variantId}
-  tags: Variant
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1variantsvariantid-delete-openapi.md
-- name: Google Genomics API Get Variant
-  x-api-slug: google-genomics-api
+- name: Genomics - Get Variant
+  x-api-slug: v1variantsvariantid-get
   description: |-
     Gets a variant by ID.
 
@@ -699,13 +737,14 @@ apis:
     Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/variants/{variantId}
-  tags: Variant
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1variantsvariantid-get-openapi.md
-- name: Google Genomics API Update Variant
-  x-api-slug: google-genomics-api
+- name: Genomics - Update Variant
+  x-api-slug: v1variantsvariantid-patch
   description: |-
     Updates a variant.
 
@@ -717,13 +756,14 @@ apis:
     its calls.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/variants/{variantId}
-  tags: Variant
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1variantsvariantid-patch-openapi.md
-- name: Google Genomics API Create Variant
-  x-api-slug: google-genomics-api
+- name: Genomics - Create Variant
+  x-api-slug: v1variantsimport-post
   description: |-
     Creates variant data by asynchronously importing the provided information.
 
@@ -745,13 +785,14 @@ apis:
     Imported VCF headers are appended to the metadata already in a variant set.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/variants:import
-  tags: Variant
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1variantsimport-post-openapi.md
-- name: Google Genomics API Merge Variants
-  x-api-slug: google-genomics-api
+- name: Genomics - Merge Variants
+  x-api-slug: v1variantsmerge-post
   description: |-
     Merges the given variants with existing variants.
 
@@ -846,13 +887,14 @@ apis:
     if that is indeed the case.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/variants:merge
-  tags: Variant
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1variantsmerge-post-openapi.md
-- name: Google Genomics API Create Variant Set
-  x-api-slug: google-genomics-api
+- name: Genomics - Create Variant Set
+  x-api-slug: v1variantsets-post
   description: |-
     Creates a new variant set.
 
@@ -865,13 +907,14 @@ apis:
     assigned by the server.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/variantsets
-  tags: Variant Set
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1variantsets-post-openapi.md
-- name: Google Genomics API Get Variant Sets
-  x-api-slug: google-genomics-api
+- name: Genomics - Get Variant Sets
+  x-api-slug: v1variantsetssearch-post
   description: |-
     Returns a list of all variant sets matching search criteria.
 
@@ -883,13 +926,14 @@ apis:
     [GlobalAllianceApi.searchVariantSets](https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/variantmethods.avdl#L49).
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/variantsets/search
-  tags: Variant Set
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1variantsetssearch-post-openapi.md
-- name: Google Genomics API Delete Variant Set
-  x-api-slug: google-genomics-api
+- name: Genomics - Delete Variant Set
+  x-api-slug: v1variantsetsvariantsetid-delete
   description: |-
     Deletes a variant set including all variants, call sets, and calls within.
     This is not reversible.
@@ -899,13 +943,14 @@ apis:
     Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/variantsets/{variantSetId}
-  tags: Variant Set
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1variantsetsvariantsetid-delete-openapi.md
-- name: Google Genomics API Get Variant Set
-  x-api-slug: google-genomics-api
+- name: Genomics - Get Variant Set
+  x-api-slug: v1variantsetsvariantsetid-get
   description: |-
     Gets a variant set by ID.
 
@@ -914,13 +959,14 @@ apis:
     Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/variantsets/{variantSetId}
-  tags: Variant Set
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1variantsetsvariantsetid-get-openapi.md
-- name: Google Genomics API Update Variant Set
-  x-api-slug: google-genomics-api
+- name: Genomics - Update Variant Set
+  x-api-slug: v1variantsetsvariantsetid-patch
   description: |-
     Updates a variant set using patch semantics.
 
@@ -929,13 +975,14 @@ apis:
     Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/variantsets/{variantSetId}
-  tags: Variant Set
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1variantsetsvariantsetid-patch-openapi.md
-- name: Google Genomics API Export Variant Set
-  x-api-slug: google-genomics-api
+- name: Genomics - Export Variant Set
+  x-api-slug: v1variantsetsvariantsetidexport-post
   description: |-
     Exports variant set data to an external destination.
 
@@ -944,39 +991,42 @@ apis:
     Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/variantsets/{variantSetId}:export
-  tags: Variant Set
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1variantsetsvariantsetidexport-post-openapi.md
-- name: Google Genomics API Get Operation
-  x-api-slug: google-genomics-api
+- name: Genomics - Get Operation
+  x-api-slug: v1name-get
   description: |-
     Gets the latest state of a long-running operation.  Clients can use this
     method to poll the operation result at intervals as recommended by the API
     service.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/{name}
-  tags: Operation
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1name-get-openapi.md
-- name: Google Genomics API Cancel Operation
-  x-api-slug: google-genomics-api
+- name: Genomics - Cancel Operation
+  x-api-slug: v1namecancel-post
   description: Starts asynchronous cancellation on a long-running operation. The server
     makes a best effort to cancel the operation, but success is not guaranteed. Clients
     may use Operations.GetOperation or Operations.ListOperations to check whether
     the cancellation succeeded or the operation completed despite cancellation.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/{name}:cancel
-  tags: Operation
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1namecancel-post-openapi.md
-- name: Google Genomics API Get IAM Policy
-  x-api-slug: google-genomics-api
+- name: Genomics - Get IAM Policy
+  x-api-slug: v1resourcegetiampolicy-post
   description: |-
     Gets the access control policy for the dataset. This is empty if the
     policy or resource does not exist.
@@ -989,13 +1039,14 @@ apis:
     Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/{resource}:getIamPolicy
-  tags: IAM
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1resourcegetiampolicy-post-openapi.md
-- name: Google Genomics API Set IAM Policy
-  x-api-slug: google-genomics-api
+- name: Genomics - Set IAM Policy
+  x-api-slug: v1resourcesetiampolicy-post
   description: |-
     Sets the access control policy on the specified dataset. Replaces any
     existing policy.
@@ -1008,13 +1059,14 @@ apis:
     Policy</a> for more information.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/{resource}:setIamPolicy
-  tags: IAM
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1resourcesetiampolicy-post-openapi.md
-- name: Google Genomics API Test IAM Permissions
-  x-api-slug: google-genomics-api
+- name: Genomics - Test IAM Permissions
+  x-api-slug: v1resourcetestiampermissions-post
   description: |-
     Returns permissions that a caller has on the specified resource.
     See <a href="/iam/docs/managing-policies#testing_permissions">Testing
@@ -1025,27 +1077,17 @@ apis:
     Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
   humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com////v1/{resource}:testIamPermissions
-  tags: IAM
+  baseURL: ://genomics.googleapis.com//
+  tags: Science, Genome, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/v1resourcetestiampermissions-post-openapi.md
-- name: Google Genomics API
-  x-api-slug: google-genomics-api
-  description: Google Genomics helps the life science community organize the world&rsquo;s
-    genomic information and make it accessible and useful. Big genomic data is here
-    today, with petabytes rapidly growing toward exabytes. Through our extensions
-    to Google Cloud Platform, you can apply the same technologies that power Google
-    Search and Maps to securely store, process, explore, and share large, complex
-    datasets.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/power-your-science.png
-  humanURL: https://cloud.google.com/genomics/
-  baseURL: ://genomics.googleapis.com//
-  tags: Google Genomics
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-genomics/master/_listings/google-genomics/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://google.fusion.tables.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://google.genomics.stack.network
 - type: x-documentation
   url: https://cloud.google.com/genomics/overview
 - type: x-forum
